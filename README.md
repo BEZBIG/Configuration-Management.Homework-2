@@ -24,3 +24,6 @@
 
 
 Все функции визуализатора зависимостей должны быть покрыты тестами.
+
+
+Пример скрипта для запуска программы: python maven_deps_visualizer.py org.springframework.boot:spring-boot-starter-web:2.5.6 --depth 2 --output dependencies.dot
