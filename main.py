@@ -53,3 +53,28 @@ def get_dependencies(group_id, artifact_id, version, depth, current_depth=0, vis
         result.extend(get_dependencies(dep_group_id, dep_artifact_id, dep_version, depth, current_depth + 1, visited))
 
     return result
+
+# Генерация .dot файла
+def generate_dot_code(dependencies):
+    if not dependencies:
+        print("Не найдены зависимости!")
+    dot_code = "digraph G {\n"
+    for dep1, dep2, version in dependencies:
+        dot_code += f'    "{dep1}" -> "{dep2}" [label="{version}"];\n'  # Добавляем версию на ребре
+    dot_code += "}\n"
+    return dot_code
+
+
+# Пример вызова функции с заданными параметрами
+dependencies = get_dependencies("org.springframework.boot", "spring-boot-starter-web", "2.5.6", 2)
+dot_code = generate_dot_code(dependencies)
+
+# Выводим на экран содержимое .dot
+print("\nСодержимое графа .dot:\n")
+print(dot_code)
+
+# Сохраняем результат в .dot файл
+with open('dependencies.dot', 'w') as f:
+    f.write(dot_code)
+
+print("Граф зависимостей сохранен в файл: dependencies.dot")
