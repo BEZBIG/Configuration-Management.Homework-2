@@ -1,0 +1,31 @@
+digraph G {
+    "spring-boot-starter-web" -> "spring-boot-starter" [label="2.5.6"];
+    "spring-boot-starter" -> "spring-boot" [label="2.5.6"];
+    "spring-boot-starter" -> "spring-boot-autoconfigure" [label="2.5.6"];
+    "spring-boot-starter" -> "spring-boot-starter-logging" [label="2.5.6"];
+    "spring-boot-starter" -> "jakarta.annotation-api" [label="1.3.5"];
+    "spring-boot-starter" -> "spring-core" [label="5.3.12"];
+    "spring-boot-starter" -> "snakeyaml" [label="1.28"];
+    "spring-boot-starter-web" -> "spring-boot-starter-json" [label="2.5.6"];
+    "spring-boot-starter-json" -> "spring-boot-starter" [label="2.5.6"];
+    "spring-boot-starter-json" -> "spring-web" [label="5.3.12"];
+    "spring-boot-starter-json" -> "jackson-databind" [label="2.12.5"];
+    "spring-boot-starter-json" -> "jackson-datatype-jdk8" [label="2.12.5"];
+    "spring-boot-starter-json" -> "jackson-datatype-jsr310" [label="2.12.5"];
+    "spring-boot-starter-json" -> "jackson-module-parameter-names" [label="2.12.5"];
+    "spring-boot-starter-web" -> "spring-boot-starter-tomcat" [label="2.5.6"];
+    "spring-boot-starter-tomcat" -> "jakarta.annotation-api" [label="1.3.5"];
+    "spring-boot-starter-tomcat" -> "tomcat-embed-core" [label="9.0.54"];
+    "spring-boot-starter-tomcat" -> "tomcat-embed-el" [label="9.0.54"];
+    "spring-boot-starter-tomcat" -> "tomcat-embed-websocket" [label="9.0.54"];
+    "spring-boot-starter-web" -> "spring-web" [label="5.3.12"];
+    "spring-web" -> "spring-beans" [label="5.3.12"];
+    "spring-web" -> "spring-core" [label="5.3.12"];
+    "spring-boot-starter-web" -> "spring-webmvc" [label="5.3.12"];
+    "spring-webmvc" -> "spring-aop" [label="5.3.12"];
+    "spring-webmvc" -> "spring-beans" [label="5.3.12"];
+    "spring-webmvc" -> "spring-context" [label="5.3.12"];
+    "spring-webmvc" -> "spring-core" [label="5.3.12"];
+    "spring-webmvc" -> "spring-expression" [label="5.3.12"];
+    "spring-webmvc" -> "spring-web" [label="5.3.12"];
+}
