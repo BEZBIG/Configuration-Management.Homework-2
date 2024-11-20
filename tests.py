@@ -4,7 +4,7 @@ from unittest.mock import patch, MagicMock
 from main import get_dependencies, generate_dot_code  # Замените `your_script` на имя вашего файла
 
 # Тест для базового случая с одной зависимостью
-@patch("main.requests.get")  # Убедитесь, что 'your_script' заменено на имя вашего модуля
+@patch("main.requests.get")
 def test_get_dependencies_basic(mock_get):
     # Подготовка mock-ответа для POM файла
     mock_response = """<?xml version="1.0"?>
