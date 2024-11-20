@@ -49,7 +49,7 @@ dependencies.dot - Файл, в который сохраняется описа
 
 Содержимое файла dependencies.dot:
 
-![Image alt2](https://github.com/BEZBIG/Configuration-Management.Homework-2/blob/master/pic/1.png)
+![Image alt2](https://github.com/BEZBIG/Configuration-Management.Homework-2/blob/master/pic/2.png)
 
 Проверка работоспособности инструмента командной строки для визуализации графа зависимостей с помощью сайта для построения графов: 
 
